@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Pong - Victory Display</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Simple Pong</h1>
+
+        <div class="controls">
+            <button id="startBtn" class="btn">Start</button>
+            <button id="restartBtn" class="btn">Restart</button>
+            <label class="mute">
+                <input id="muteChk" type="checkbox" /> Mute
+            </label>
+        </div>
+
+        <div class="game-wrap" style="position:relative;">
+            <canvas id="game" width="800" height="500" tabindex="0"></canvas>
+        </div>
+
+        <p class="instructions">
+            Controls: Move the mouse over the canvas or use Up / Down arrow keys to move the left paddle. Press Space to
+            pause/resume. Click Start to begin (audio requires user interaction).
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
